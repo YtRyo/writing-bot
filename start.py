@@ -7,7 +7,7 @@ from os import system
 # Instagram: bit.ly/YtRyoIg
 # Website: bit.ly/YtRyoWeb
 
-# Enter the API token here | Get API token at https://afara.my.id
+# Get a free API token at https://afara.my.id
 
 Token = json.load(open('token.json'))['token']
 
