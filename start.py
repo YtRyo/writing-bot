@@ -14,6 +14,8 @@ Token = json.load(open('token.json'))['token']
 def main():
     system('clear')
     try:
+        print('[+] Bot Nulis [+]')
+        print('')
         text = input('Text: ')
         res = requests.get('https://afara.my.id/api/writing-bot', data = '{"text":"' + str(text) + '"}', headers = {
             "Accept": "application/json",
@@ -26,7 +28,9 @@ def main():
         elif 'message' in res:
             print('Invalid API token, get a free API token at "https://afara.my.id"')
         else:
+            print('')
             print('Berhasil, buka url ini untuk melihat hasilnya: ' + res['url'])
+            print('')
     except KeyboardInterrupt:
         print('Exit.')
 
